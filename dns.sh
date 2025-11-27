@@ -51,8 +51,8 @@ DNS_LIST=(
     # ------------------------------------------------
     # IPv4 - 区域特色优化 (Regional Optimized)
     # ------------------------------------------------
-    "205.252.144.144|PCCW (Hong Kong Telecom)"
     "203.80.96.10|HKBN (Hong Kong Broadband)"
+    "203.80.96.9|HKBN Secondary (Hong Kong)"
     "101.101.101.101|Quad101 (Taiwan - TWNIC)"
     "168.95.1.1|HiNet (Taiwan Telecom)"
     "168.126.63.1|KT DNS (South Korea Telecom)"
