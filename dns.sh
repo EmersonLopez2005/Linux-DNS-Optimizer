@@ -25,35 +25,61 @@ fi
 # DNS 列表配置 (格式: IP|说明)
 # ====================================================
 DNS_LIST=(
-    # --- 安全与去广告 (Security & AdBlock) ---
+    # ------------------------------------------------
+    # IPv4 - 安全/隐私/去广告 (Security & Privacy)
+    # ------------------------------------------------
     "94.140.14.14|AdGuard DNS (Default - AdBlock)"
     "94.140.15.15|AdGuard DNS (Family Protection)"
     "1.1.1.2|Cloudflare (Malware Blocking)"
-    "9.9.9.9|Quad9 (Malware Blocking - Swiss/EU)"
+    "9.9.9.9|Quad9 (Malware Blocking - Swiss)"
+    "194.242.2.2|Mullvad DNS (No-Logging/Privacy)"
+    "185.228.168.9|CleanBrowsing (Security Filter)"
 
-    # --- 全球/欧美高速 (Global Anycast - US/EU Recommended) ---
-    "1.1.1.1|Cloudflare (IPv4)"
-    "8.8.8.8|Google Public DNS (IPv4)"
-    "208.67.222.222|OpenDNS (Cisco - IPv4)"
-    "1.0.0.1|Cloudflare Secondary"
-    "8.8.4.4|Google Secondary"
-
-    # --- 美国/欧洲本地优化 (US/DE/EU Backbone) ---
-    "4.2.2.1|Level3 (US Backbone - CenturyLink)"
+    # ------------------------------------------------
+    # IPv4 - 全球高速/骨干网 (Global Speed & Backbone)
+    # ------------------------------------------------
+    "1.1.1.1|Cloudflare (IPv4 - Primary)"
+    "1.0.0.1|Cloudflare (IPv4 - Secondary)"
+    "8.8.8.8|Google Public DNS (IPv4 - Primary)"
+    "8.8.4.4|Google (IPv4 - Secondary)"
+    "76.76.2.0|Control D (Unfiltered - High Speed)"
+    "208.67.222.222|OpenDNS (Cisco)"
+    "4.2.2.1|Level3 (CenturyLink - US Backbone)"
     "4.2.2.2|Level3 Secondary (US)"
+    "156.154.70.1|Neustar UltraDNS (Enterprise)"
+
+    # ------------------------------------------------
+    # IPv4 - 区域特色优化 (Regional Optimized)
+    # ------------------------------------------------
     "84.200.69.80|DNS.WATCH (Germany - Privacy)"
     "84.200.70.40|DNS.WATCH Secondary (DE)"
-    
-    # --- 亚太地区优化 (Asia Regional - TW/KR) ---
     "101.101.101.101|Quad101 (Taiwan - TWNIC)"
     "168.95.1.1|HiNet (Taiwan Telecom)"
     "168.126.63.1|KT DNS (South Korea Telecom)"
-    
-    # --- IPv6 ---
-    "2606:4700:4700::1111|Cloudflare (IPv6)"
-    "2001:4860:4860::8888|Google (IPv6)"
-    "2a10:50c0::ad1:ff|AdGuard (IPv6)"
-    "2001:1608:10:25::1c04:b12f|DNS.WATCH (IPv6 - DE)"
+    "77.88.8.8|Yandex.DNS (Russia/CIS Optimized)"
+
+    # ------------------------------------------------
+    # IPv6 - 完整支持列表 (IPv6 Full Support)
+    # ------------------------------------------------
+    # --- Global Speed ---
+    "2606:4700:4700::1111|Cloudflare (IPv6 - Primary)"
+    "2606:4700:4700::1001|Cloudflare (IPv6 - Secondary)"
+    "2001:4860:4860::8888|Google (IPv6 - Primary)"
+    "2001:4860:4860::8844|Google (IPv6 - Secondary)"
+    "2620:119:35::35|OpenDNS (IPv6)"
+    "2606:1a40::2|Control D (IPv6 - Unfiltered)"
+
+    # --- Security & Privacy ---
+    "2a10:50c0::ad1:ff|AdGuard (IPv6 - AdBlock)"
+    "2a10:50c0::ad2:ff|AdGuard (IPv6 - Family)"
+    "2620:fe::fe|Quad9 (IPv6 - Security)"
+    "2a07:a8c0::|Mullvad (IPv6 - Privacy)"
+    "2a0d:2a00:1::2|CleanBrowsing (IPv6 - Security)"
+
+    # --- Regional ---
+    "2001:b000:168::1|HiNet (Taiwan IPv6)"
+    "2001:1608:10:25::1c04:b12f|DNS.WATCH (Germany IPv6)"
+    "2a02:6b8::feed:0ff|Yandex.DNS (Russia IPv6)"
 )
 
 # ====================================================
