@@ -49,7 +49,7 @@ sudo ./dns.sh
 | | **KT DNS** | **韩国** 电信霸主，KR VPS 推荐 |
 | | **Yandex** | **俄罗斯** 搜索引擎巨头，RU/CIS 地区推荐 |
 
-> **🚀 特性更新**: v3.0 版本现已**全面支持 IPv6**，上述所有主流厂商的 IPv6 节点均已收录 (包含主/备节点)。
+> **🚀 特性更新**: v2.0 版本现已**全面支持 IPv6**，上述所有主流厂商的 IPv6 节点均已收录 (包含主/备节点)。
 
 ⚠️ 免责声明
 本工具仅修改 /etc/resolv.conf 和 /etc/systemd/resolved.conf。虽然脚本包含备份功能，但在生产环境操作前，建议您知晓 DNS 修改可能带来的网络影响。
@@ -57,7 +57,6 @@ sudo ./dns.sh
 
 📄 License
 MIT License
-
 <p align="center">
   <a href="https://github.com/EmersonLopez2005/Linux-DNS-Optimizer">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=EmersonLopez2005&repo=Linux-DNS-Optimizer&theme=nightowl&show_owner=true" alt="GitHub Repo Card">
@@ -68,3 +67,4 @@ MIT License
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=EmersonLopez2005&theme=gitdimmed&no-frame=true&margin-w=4" alt="Trophy">
 </p>
+
