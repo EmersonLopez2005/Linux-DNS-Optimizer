@@ -68,5 +68,5 @@ MIT License
 </p>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=EmersonLopez2005&theme=gitdimmed&no-frame=true&margin-w=4" alt="Trophy">
+  <img src="https://komarev.com/ghpvc/?username=EmersonLopez2005&label=Project%20Views&color=0e75b6&style=flat" alt="Views">
 </p>
